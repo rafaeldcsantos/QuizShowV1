@@ -189,7 +189,7 @@ function endQuiz() {
   scoreElement.textContent = score;
 
   // Check if the score meets the threshold for fireworks
-  const threshold = 0.0005 * maxScore;
+  const threshold = 0.25 * maxScore;
   if (score >= threshold) {
     launchConfetti();
   }
