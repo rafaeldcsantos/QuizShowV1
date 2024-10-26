@@ -1,0 +1,106 @@
+/* Quiz Container Styling */
+#quiz-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+/* Center the Question Title */
+#question {
+  font-size: 2em; /* Increase font size for readability */
+  text-align: center; /* Center the question text */
+  margin-bottom: 20px;
+}
+
+/* Style Answer Choices for Kiosk Use */
+#choices button {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 20px; /* Make buttons taller for easier touch access */
+  font-size: 1.5em; /* Increase text size for readability */
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#choices button:hover {
+  background-color: #0056b3;
+}
+
+/* Timer Styling */
+#timer {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #d9534f;
+  margin: 10px 0;
+}
+
+
+/* Styling for Skip and Next buttons */
+#skip-button, #next-button {
+  display: inline-block;
+  width: 80%; /* Wide enough for easy touch access */
+  max-width: 600px;
+  padding: 20px; /* Increased padding for large button size */
+  font-size: 1.5em; /* Larger text for readability */
+  margin-top: 30px; /* Space above buttons to avoid accidental clicks */
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+/* Distinct colors for each button */
+#skip-button {
+  background-color: #ffc107; /* Yellow background for Skip */
+  color: #333;
+  margin-bottom: 15px; /* Separate the two buttons vertically */
+}
+
+#skip-button:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+
+#next-button {
+  background-color: #28a745; /* Green background for Next */
+  color: white;
+}
+
+#next-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Center-align the buttons */
+#quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Result Page Styling */
+#result-container {
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+}
+
+#result-container h2 {
+  color: #00796b;
+}
+
+#result-container #score {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #00796b;
+}

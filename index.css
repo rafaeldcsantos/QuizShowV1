@@ -1,0 +1,143 @@
+/* Centered, Fixed-Width Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-container {
+    width: 1800px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent for overlay effect */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent for overlay effect */
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    width: 600px;
+  }
+  
+  /* Main Content */
+  .main-page h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsive layout */
+  }
+  
+  /* Quiz Icon Button Styling */
+  .quiz-icon {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.3s;
+    color: white;
+  }
+  
+  .quiz-icon img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: auto; /* Pushes the text content to the bottom */
+  }
+  
+  /* Overlay for Title and Subtitle */
+  .quiz-icon .text-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+    text-align: center;
+  }
+  
+  .quiz-icon span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .quiz-icon p {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #ddd;
+  }
+  
+  .quiz-icon:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer Styling */
+  footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  footer p {
+    margin: 0;
+    padding-top: 50px;
+    font-size: 150%;
+    color: #6060A0;
+  }
+  
+
+  .hidden {
+    display: none !important; /* Forcefully hide elements marked as hidden */
+  }
+  
+  #next-button, #skip-button {
+    display: inline-block; /* Ensure buttons are initially set to display as inline-block */
+  }
+  
+  /* Styling for the Reiniciar Button on the Result Page */
+#result-container button {
+  padding: 15px 30px; /* Increase padding to make the button larger */
+  font-size: 1.5em; /* Increase font size for readability */
+  background-color: #28a745; /* Set a bright, friendly green color */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#result-container button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
